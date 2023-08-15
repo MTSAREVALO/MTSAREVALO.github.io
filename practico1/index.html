@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Simple</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="calculator">
+    <h1>Calculadora</h1>
+  <form>
+    <input type="number" id="operand1" placeholder="Operando 1">
+    <select id="operador">
+      <option value="suma">+</option>
+      <option value="resta">-</option>
+      <option value="multiplicacion">*</option>
+      <option value="division">/</option>
+    </select>
+    <input type="number" id="operand2" placeholder="Operando 2">
+    <input type="reset" value="borrar">
+  </form>
+    <button id="botonCalcular" onclick="calcular()">Calcular</button>
+    <div id="result"><label id="devolucion">resultado</label>
+    </div>
+  
+</div>
+  <script src="calculadoraSimple.js"></script>
+</body>
+</html>
