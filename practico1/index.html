@@ -7,24 +7,31 @@
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+  <!--titulo-->
 <div class="calculator">
     <h1>Calculadora</h1>
   <form>
+    <!--casillero 1-->
     <input type="number" id="operand1" placeholder="Operando 1">
+    <!--signos-->
     <select id="operador">
       <option value="suma">+</option>
       <option value="resta">-</option>
       <option value="multiplicacion">*</option>
       <option value="division">/</option>
     </select>
+    <!--casillero 2-->
     <input type="number" id="operand2" placeholder="Operando 2">
+    <!--boton para borrar-->
     <input type="reset" value="borrar">
   </form>
+  <!--boton calcular-->
     <button id="botonCalcular" onclick="calcular()">Calcular</button>
     <div id="result"><label id="devolucion">resultado</label>
     </div>
   
 </div>
+<!--llamda al archivo javascript-->
   <script src="calculadoraSimple.js"></script>
 </body>
 </html>
